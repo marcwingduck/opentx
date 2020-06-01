@@ -153,6 +153,12 @@ void telemetryPortInvertedInit(uint32_t baudrate)
     return;
   }
 
+#if defined(PCBX12S)
+  DMA_Cmd(TELEMETRY_DMA_Stream_RX, DISABLE);
+  USART_DMACmd(TELEMETRY_USART, USART_DMAReq_Rx, DISABLE);
+  DMA_DeInit(TELEMETRY_DMA_Stream_RX);
+#endif
+
   rxBitCount = 0;
 
   // configure bit sample timer
