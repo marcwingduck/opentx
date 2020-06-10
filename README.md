@@ -1,3 +1,7 @@
+This is a fork of OpenTX which modifies the button mapping of the Taranis X-Lite. The d-pad and joystick are swapped as well as the enter and shift Buttons. Changes were made in branch `xlite_navigation_swap` that is based on `releases/2.3.7`.
+
+This way, navigation through the menus feels like using a regular game controller. Trimming still works using the joystick, but is somewhat fiddly for the left stick, since pressing the joystick button (shift) and moving it at the same time does not work so well.
+
 ## OpenTX 2.3 Branch
 
 [![Travis build Status](https://travis-ci.org/opentx/opentx.svg?branch=2.3)](https://travis-ci.org/opentx/opentx)
